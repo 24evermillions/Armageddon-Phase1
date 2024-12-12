@@ -16,6 +16,7 @@ route {
   transit_gateway_id  = aws_ec2_transit_gateway.tokyo_tgw.id
   }
 
+
   route {
     
       cidr_block                 = "0.0.0.0/0"
@@ -58,6 +59,7 @@ resource "aws_route_table" "tokyo-public" {
   tags = {
     Name: "${var.env_prefix_tokyo}-public-rtb"
   }
+
 }
 
 
@@ -119,7 +121,7 @@ resource "aws_route_table" "newyork-private" {
       vpc_peering_connection_id  = null
       core_network_arn           = null
     }
-  route {
+  /*route {
   cidr_block = "172.18.0.0/16"
   transit_gateway_id  = aws_ec2_transit_gateway.newyork_tgw.id
   }
@@ -127,6 +129,7 @@ resource "aws_route_table" "newyork-private" {
   tags = {
     Name: "${var.env_prefix_newyork}-private-rtb"
   }
+*/
 }
 
 
@@ -154,7 +157,7 @@ resource "aws_route_table" "newyork-public" {
       vpc_peering_connection_id  = null
       core_network_arn           = null
     } 
-route {
+/*route {
   cidr_block = "172.18.0.0/16"
   transit_gateway_id  = aws_ec2_transit_gateway.newyork_tgw.id
   }
@@ -162,6 +165,8 @@ route {
   tags = {
     Name: "${var.env_prefix_newyork}-public-rtb"
   }
+*/
+
 }
 
 
