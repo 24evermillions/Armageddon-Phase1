@@ -150,7 +150,7 @@ avail_zone_saopaulo-public1c = "sa-east-1c"
 #Sau Paulo private AZ assigned values to Variables
 
 avail_zone_saopaulo-private1a = "sa-east-1a" 
-avail_zone_saopaulo-private1c = "sa-east-1b"
+avail_zone_saopaulo-private1c = "sa-east-1c"
 
 //////////////////////////////////////////////////////////////////////////
 

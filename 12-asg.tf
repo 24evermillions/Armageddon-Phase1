@@ -240,9 +240,9 @@
 
  resource "aws_autoscaling_group" "saopaulo-asg" {
    name_prefix           = "saopaulo-auto-scaling-group-"
-   min_size              = 1
-   max_size              = 3
-   desired_capacity      = 1
+   min_size              = 3
+   max_size              = 6
+   desired_capacity      = 3
    vpc_zone_identifier   = [
      aws_subnet.saopaulo-private-subnet-1a.id,
      aws_subnet.saopaulo-private-subnet-1c.id,
@@ -404,7 +404,7 @@
    name_prefix           = "hongkong-auto-scaling-group-"
    min_size              = 3
    max_size              = 6
-   desired_capacity      = 6
+   desired_capacity      = 3
    vpc_zone_identifier   = [
      aws_subnet.hongkong-private-subnet-1a.id,
      aws_subnet.hongkong-private-subnet-1b.id,

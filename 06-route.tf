@@ -148,7 +148,7 @@ resource "aws_route_table" "newyork-public" {
       carrier_gateway_id         = null
       destination_prefix_list_id = null
       egress_only_gateway_id     = null
-      #instance_id                = null
+      #instance_id               = null
       ipv6_cidr_block            = null
       local_gateway_id           = null
       network_interface_id       = null

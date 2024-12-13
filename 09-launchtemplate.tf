@@ -220,7 +220,7 @@
  resource "aws_launch_template" "saopaulo-LT" {
    name_prefix   = "saopaulo-LT"
    image_id      = data.aws_ami.saopaulo-ami.id
-   instance_type = var.instance_type1
+   instance_type = var.instance_type
    provider = aws.sao-paulo
 
    key_name = "saopaulo-key-pair"
